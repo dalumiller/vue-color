@@ -123,7 +123,7 @@ export default {
   props: {
     disableAlpha: {
       type: Boolean,
-      default: false
+      default: true
     },
     disableFields: {
       type: Boolean,
@@ -139,7 +139,7 @@ export default {
   },
   data() {
     return {
-      fieldsIndex: 0,
+      fieldsIndex: 1,
       highlight: false
     };
   },
