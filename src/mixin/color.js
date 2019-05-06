@@ -41,7 +41,6 @@ function _colorChange(data, oldHue) {
   return {
     hsl: hsl,
     hex: color.toHexString().toUpperCase(),
-    hex8: color.toHex8String().toUpperCase(),
     rgba: color.toRgb(),
     hsv: hsv,
     cmyk: cmyk,

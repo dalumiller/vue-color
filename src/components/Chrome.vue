@@ -33,7 +33,7 @@
           <!-- hex -->
           <div class="vc-chrome-field">
             <ed-in v-if="!hasAlpha" label="hex" :value="colors.hex" @change="inputChange"></ed-in>
-            <ed-in v-if="hasAlpha" label="hex" :value="colors.hex8" @change="inputChange"></ed-in>
+            <ed-in v-if="hasAlpha" label="hex" :value="colors.hex" @change="inputChange"></ed-in>
           </div>
         </div>
         <div class="vc-chrome-fields" v-show="fieldsIndex === 1">
@@ -123,7 +123,7 @@ export default {
   props: {
     disableAlpha: {
       type: Boolean,
-      default: false
+      default: true
     },
     disableFields: {
       type: Boolean,
@@ -139,7 +139,7 @@ export default {
   },
   data() {
     return {
-      fieldsIndex: 0,
+      fieldsIndex: 1,
       highlight: false
     };
   },
